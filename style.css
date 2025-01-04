@@ -1,42 +1,48 @@
+/* Estilos gerais para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, com fallback para fontes sem serifa */
+    margin: 0; /* Remove as margens padrão do navegador */
+    padding: 0; /* Remove os espaçamentos internos padrão do navegador */
+    background-color: #f4f4f9; /* Define a cor de fundo como um tom claro */
+    color: #333; /* Define a cor do texto como um cinza escuro */
 }
 
+/* Estilos para o cabeçalho */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #4CAF50; /* Define o fundo do cabeçalho como verde */
+    color: white; /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
 }
 
+/* Estilos para o conteúdo principal */
 main {
-    margin: 20px;
-    text-align: center;
+    margin: 20px; /* Adiciona margem ao redor do conteúdo principal */
+    text-align: center; /* Centraliza o texto dentro da área principal */
 }
 
+/* Estilos para os botões */
 button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #4CAF50; /* Define o fundo do botão como verde */
+    color: white; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove as bordas do botão */
+    padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+    font-size: 16px; /* Define o tamanho da fonte do texto no botão */
 }
 
+/* Estilos para o botão quando o mouse passa sobre ele */
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Muda o fundo do botão para um verde mais escuro quando o mouse está sobre ele */
 }
 
+/* Estilos para o rodapé */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #333; /* Define o fundo do rodapé como cinza escuro */
+    color: white; /* Define a cor do texto do rodapé como branco */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px 0; /* Adiciona espaçamento interno ao rodapé */
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0; /* Alinha o rodapé com a parte inferior da janela */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
 }
