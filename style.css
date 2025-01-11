@@ -9,7 +9,7 @@ body {
 
 /* Estilos para o cabeçalho */
 header {
-    background-color: #4CAF50; /* Define o fundo do cabeçalho como verde */
+    background-color: #7c7d7c; /* Define o fundo do cabeçalho como cinza */
     color: white; /* Define a cor do texto como branco */
     padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
     text-align: center; /* Centraliza o texto no cabeçalho */
@@ -19,11 +19,13 @@ header {
 main {
     margin: 20px; /* Adiciona margem ao redor do conteúdo principal */
     text-align: center; /* Centraliza o texto dentro da área principal */
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Estilos para os botões */
 button {
-    background-color: #FF5733; /* Define o fundo do botão como laranja */
+    background-color: #74aa9c; /* Define o fundo do botão como verde */
     color: white; /* Define a cor do texto do botão como branco */
     border: none; /* Remove as bordas do botão */
     padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
@@ -33,8 +35,13 @@ button {
 
 /* Estilos para o botão quando o mouse passa sobre ele */
 button:hover {
-    background-color: #45a049; /* Muda o fundo do botão para um verde mais escuro quando o mouse está sobre ele */
+    background-color: #a8aaa8; /* Muda o fundo do botão para um cinza quando o mouse está sobre ele */
 }
+
+li {
+    text-align: justify;
+}   
+
 
 /* Estilos para o rodapé */
 footer {
