@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Define o tipo de documento como HTML5 -->
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo para dispositivos móveis -->
-    <title>Projeto Exemplo</title> <!-- Define o título da página que aparece na aba do navegador -->
-    <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo CSS externo para estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Página</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho da página -->
     <header>
-        <h1>Abaixo a corrupção!</h1> <!-- Título principal da página -->
+        <h1>Cabeçalho</h1>
+        <nav>Menu de Navegação</nav>
     </header>
 
-    <!-- Conteúdo principal da página -->
-    <main>
-        <p>Este é um site estático simples para demonstrar como criar um CI/CD com Amazon S3.</p> <!-- Texto explicativo do propósito do site -->
-        <button id="clickMe">Clique aqui</button> <!-- Botão interativo com um ID para uso no JavaScript -->
-        <p id="output"></p> <!-- Parágrafo vazio para exibir mensagens geradas pelo JavaScript -->
-    </main>
+    <div class="container">
+        <article>
+            <section>Conteúdo Principal</section>
+        </article>
+        <aside>Barra Lateral</aside>
+    </div>
 
-    <!-- Rodapé da página -->
     <footer>
-        <p>&copy; 2025 - Exemplo de Projeto</p> <!-- Informações de copyright no rodapé -->
+        <p>Rodapé</p>
     </footer>
-
-    <!-- Vincula o arquivo JavaScript externo para funcionalidade interativa -->
-    <script src="script.js"></script>
 </body>
 </html>
