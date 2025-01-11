@@ -1,47 +1,76 @@
 /* Estilos globais */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Define a fonte padrão para Arial ou sans-serif */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura */
 }
 
-header, footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+/* Header */
+header {
+    background-color: #4CAF50; /* Define a cor de fundo do cabeçalho como verde */
+    color: white; /* Define a cor do texto como branco */
+    padding: 10px 20px; /* Define o padding do cabeçalho (10px em cima e embaixo, 20px nas laterais) */
+    position: relative; /* Define a posição como relativa, permitindo posicionamento absoluto de elementos filhos */
 }
 
+/* Nav */
 nav {
-    background-color: #333;
-    color: white;
-    padding: 5px;
-    text-align: center;
+    background-color: #333; /* Define a cor de fundo do menu de navegação como cinza escuro */
+    color: white; /* Define a cor do texto como branco */
+    display: flex; /* Define o display como flex, permitindo o uso de propriedades flexbox */
+    justify-content: space-between; /* Distribui o espaço entre os itens, colocando-os nas extremidades */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    padding: 10px; /* Define o padding do menu de navegação (10px em todos os lados) */
+    margin-top: 10px; /* Define a margem superior do menu de navegação */
 }
 
+/* Container principal (div) */
 .container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 20px;
-    gap: 20px;
+    background-color: #FFE4B5; /* Define a cor de fundo do container principal como bege claro */
+    margin: 20px; /* Define a margem do container principal (20px em todos os lados) */
+    padding: 10px; /* Define o padding do container principal (10px em todos os lados) */
+    border: 2px solid #FFD700; /* Define a borda do container principal como dourada (2px de largura) */
 }
 
+/* Conteúdo principal */
+.content {
+    display: flex; /* Define o display como flex, permitindo o uso de propriedades flexbox */
+    flex-wrap: nowrap; /* Define que os itens não devem quebrar linha */
+    gap: 20px; /* Define o espaçamento entre os itens (20px) */
+}
+
+/* Barras laterais */
+.left-sidebar, .right-sidebar {
+    flex: 1; /* Define que as barras laterais ocupam 1 parte do espaço disponível */
+    background-color: #87CEEB; /* Define a cor de fundo das barras laterais como azul claro */
+    padding: 20px; /* Define o padding das barras laterais (20px em todos os lados) */
+    border: 1px solid #ccc; /* Define a borda das barras laterais (1px de largura, cor cinza claro) */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Artigo (conteúdo principal) */
 article {
-    flex: 3;
-    background-color: #f4f4f9;
-    padding: 20px;
-    border: 1px solid #ccc;
+    flex: 3; /* Define que o artigo ocupa 3 partes do espaço disponível */
+    background-color: #f4f4f9; /* Define a cor de fundo do artigo como branco */
+    padding: 20px; /* Define o padding do artigo (20px em todos os lados) */
+    border: 1px solid #ccc; /* Define a borda do artigo (1px de largura, cor cinza claro) */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
-aside {
-    flex: 1;
-    background-color: #ddd;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
+/* Rodapé */
 footer {
-    margin-top: 20px;
+    background-color: #1E90FF; /* Define a cor de fundo do rodapé como azul mais forte */
+    color: white; /* Define a cor do texto como branco */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Define o padding do rodapé (10px em todos os lados) */
+    margin-top: 20px; /* Define a margem superior do rodapé (20px) */
+    position: relative; /* Define a posição como relativa, permitindo posicionamento absoluto de elementos filhos */
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center; /* Alinha o texto dos títulos ao centro */
+    font-size: 18px; /* Define o tamanho da fonte dos títulos (18px) */
+    color: #333; /* Define a cor do texto dos títulos como cinza escuro */
 }
