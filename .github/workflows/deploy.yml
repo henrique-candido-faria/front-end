@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - pageStructure
+<<<<<<< HEAD
+      - curriculum
+=======
+>>>>>>> main
 
 jobs:
   deploy:
@@ -24,6 +28,14 @@ jobs:
       - name: Deploy to S3 based on branch
         run: |
           if [ "${{ github.ref_name }}" == "pageStructure" ]; then
+<<<<<<< HEAD
+            aws s3 sync . s3://another-project --delete --exclude ".git/*" --exclude ".github/*"
+          if [ "${{ github.ref_name }}" == "curriculum" ]; then
+            aws s3 sync . s3://another-project --delete --exclude ".git/*" --exclude ".github/*"
+          elif [ "${{ github.ref_name }}" == "main" ]; then
+            aws s3 sync . s3://another-project --delete --exclude ".git/*" --exclude ".github/*"
+          fi
+=======
             aws s3 sync . s3://another-project/pageStructure --delete --exclude ".git/*" --exclude ".github/*"
 <<<<<<< HEAD
           else
@@ -34,3 +46,4 @@ jobs:
 >>>>>>> main
             aws s3 sync . s3://another-project --delete --exclude ".git/*" --exclude ".github/*"
           fi
+>>>>>>> main
