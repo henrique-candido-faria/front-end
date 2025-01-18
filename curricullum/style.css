@@ -1,0 +1,68 @@
+/* Reset estilos */
+body, h1, h2, h3, p, ul, li { /* Remove margens e padding padrão, define box-sizing */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove padding padrão */
+    list-style: none; /* Remove estilo de lista padrão */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total dos elementos */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    line-height: 1.6; /* Define a altura da linha */
+    padding: 20px; /* Adiciona padding ao corpo */
+    background-color: #f4f4f9; /* Define a cor de fundo */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Header */
+header {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+header h1 {
+    font-size: 2em; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define a fonte como negrito */
+}
+
+/* Layout Principal */
+#main-content {
+    display: flex; /* Configura o layout com Flexbox */
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+#left-column, #right-column {
+    flex: 1; /* Cada coluna ocupa o mesmo espaço */
+}
+
+#right-column {
+    max-width: 300px; /* Define largura máxima para a coluna da direita */
+}
+
+/* Estilos de Seções */
+section {
+    background: #fff; /* Define a cor de fundo */
+    border: 1px solid #ddd; /* Define a borda */
+    padding: 15px; /* Adiciona padding */
+    border-radius: 5px; /* Define bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+section h2 {
+    font-size: 1.5em; /* Define o tamanho da fonte */
+    margin-bottom: 10px; /* Adiciona margem inferior */
+}
+
+/* Listas */
+ul li {
+    margin-bottom: 10px; /* Adiciona margem inferior aos itens da lista */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Adiciona margem superior */
+    font-size: 0.9em; /* Define o tamanho da fonte */
+    color: #666; /* Define a cor do texto */
+}
