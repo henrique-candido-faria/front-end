@@ -25,9 +25,9 @@ jobs:
       - name: Deploy to S3 based on branch
         run: |
           if [ "${{ github.ref_name }}" == "pageStructure" ]; then
-            aws s3 sync . s3://another-project/pageStructure --delete --exclude ".git/*" --exclude ".github/*"
-          elif [ "${{ github.ref_name }}" == "curriculum" ]; then
-            aws s3 sync . s3://another-project/curriculum --delete --exclude ".git/*" --exclude ".github/*"
+            aws s3 sync . s3://another-project --delete --exclude ".git/*" --exclude ".github/*"
+          if [ "${{ github.ref_name }}" == "curriculum" ]; then
+            aws s3 sync . s3://another-project --delete --exclude ".git/*" --exclude ".github/*"
           elif [ "${{ github.ref_name }}" == "main" ]; then
             aws s3 sync . s3://another-project --delete --exclude ".git/*" --exclude ".github/*"
           fi
